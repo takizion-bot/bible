@@ -1,0 +1,6 @@
+{
+  "framework": null,
+  "installCommand": "npm ci",
+  "buildCommand": "node build-site.mjs",
+  "outputDirectory": "public"
+}

@@ -1,0 +1,28 @@
+@use "./base.scss";
+
+// put your custom CSS here!
+
+// 한국어 가독성
+article {
+  line-height: 1.85;
+
+  p,
+  li,
+  blockquote {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+}
+
+// 모바일: 긴 사이트 제목이 줄바꿈되지 않도록
+@media all and (max-width: 800px) {
+  .page-title {
+    font-size: 1.35rem;
+    white-space: nowrap;
+  }
+
+  article table {
+    display: block;
+    overflow-x: auto;
+  }
+}
